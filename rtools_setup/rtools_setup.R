@@ -15,14 +15,13 @@ Use_REML = TRUE
 # modified instructions from @mcgowand
 
 # update r (v 3.2.4)
-install.packages("installr"); require(installr)
-updateR()
+# install.packages("installr"); require(installr)
+# updateR()
 
-# install Rtools package
+# install Rtools package - THE SAME VERSION AS R
+# be sure that the Rtools version you download matches the version of R you use
 # https://cran.r-project.org/bin/windows/Rtools/
 # Default is to save directly to your C drive
-
-
 
 # Install devtools, then run 'install_github("kaskr/adcomp/TMB")'. STOP the
 # operation when it starts downloading Rtools.exe. You will receive an error msg
