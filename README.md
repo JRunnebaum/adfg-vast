@@ -19,18 +19,22 @@ Rtools allows you to access your computer's c++ compiler. Install the most recen
 
 For details: https://github.com/stan-dev/rstan/wiki/Install-Rtools-for-Windows 
 
+**IMPORTANT: If you do not wish to update R be sure the version of Rtools you download matches your version of R.**
+**AGENCY USERS: If you do not have admin permissions for your computer you will need IT to install Rtools for you.**
 ### STEP 3: install TMB
 
 `install.packages("devtools")`
 `library(devtools)`
 
-Once devtools is installed, run `install_github("kaskr/adcomp/TMB")`. **STOP** the operation when it starts downloading the Rtools.exe. You will receive an error msg saying it cancelled and didn't install properly. Run `install_github()` again. 
+Once devtools is installed, run `install_github("kaskr/adcomp/TMB")`. **STOP** the operation when it starts downloading the Rtools.exe. You will receive an error msg saying it cancelled and didn't install properly. **Run `install_github()` again**. 
 
-`install_github("kaskr/adcomp/TMB")` **# Don't forget to hit the stop sign the first time!**
+`install_github("kaskr/adcomp/TMB")` **# Don't forget to hit the stop sign the first time AND run again!**
 `library(TMB)`
 
 ### STEP 4: test your compiler 
 In `rtools_setup.r`, we're using a simple linear mixed effects model example from https://github.com/James-Thorson/mixed-effects/tree/master/linear_mixed_model. 
+
+NOTE: If your computer did not execute the simple example and this is your first time installing TMB check Rtools version, try reinstalling TMB from "kaskr/adcomp/TMB", and last but not least check the path for Rtools (bonus step). 
 
 ### Bonus step if that didn't work... 
 **Map system path to Rtools in your environmental vars**
