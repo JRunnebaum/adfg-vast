@@ -15,7 +15,7 @@ http://www.FishStats.org
 `updateR()`
 
 ### STEP 2: install R tools
-Rtools allows you to access your computer's c++ compiler. Install the most recent version of Rtools from https://cran.rproject.org/bin/windows/Rtools/. While running the Rtools setup .exe, there will be an option to 'Select Additional Tasks' - check the box below the 'Current value' to ensure that Rtools is listed in the system path. Use the default is to save Rtools directly to your C: drive. 
+Rtools allows you to access your computer's c++ compiler. Install the most recent version of Rtools from https://cran.r-project.org/bin/windows/Rtools/. While running the Rtools setup .exe, there will be an option to 'Select Additional Tasks' - check the box below the 'Current value' to ensure that Rtools is listed in the system path. Use the default is to save Rtools directly to your C: drive. 
 
 For details: https://github.com/stan-dev/rstan/wiki/Install-Rtools-for-Windows 
 
