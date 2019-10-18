@@ -15,9 +15,7 @@ http://www.FishStats.org
 `updateR()`
 
 ### STEP 2: install R tools
-Rtools allows you to access your computer's c++ compiler. Install the most recent version of Rtools from https://cran.r-project.org/bin/windows/Rtools/. While running the Rtools setup .exe, there will be an option to 'Select Additional Tasks' - check the box below the 'Current value' to ensure that Rtools is listed in the system path. Use the default is to save Rtools directly to your C: drive. 
-
-For details: https://github.com/stan-dev/rstan/wiki/Install-Rtools-for-Windows 
+Rtools allows you to access your computer's c++ compiler. Install the most recent version of Rtools from https://cran.r-project.org/bin/windows/Rtools/. While running the Rtools setup .exe, there will be an option to add Rtools to the system path, be sure to check this box. Use the default is to save Rtools directly to your C: drive. 
 
 **IMPORTANT: If you do not wish to update R be sure the version of Rtools you download matches your version of R.**
 **AGENCY USERS: If you do not have admin permissions for your computer you will need IT to install Rtools for you.**
@@ -26,7 +24,10 @@ For details: https://github.com/stan-dev/rstan/wiki/Install-Rtools-for-Windows
 `install.packages("devtools")`
 `library(devtools)`
 
-Once devtools is installed, run `install_github("kaskr/adcomp/TMB")`. **STOP** the operation when it starts downloading the Rtools.exe. You will receive an error msg saying it cancelled and didn't install properly. **Run `install_github()` again**. 
+Once devtools is installed, run `install_github("kaskr/adcomp/TMB")`. 
+
+**This process might not be necessary any more**
+Previously there was a need to **STOP** the operation when it starts downloading the Rtools.exe. You will receive an error msg saying it cancelled and didn't install properly. **Run `install_github()` again**. 
 
 `install_github("kaskr/adcomp/TMB")` **# Don't forget to hit the stop sign the first time AND run again!**
 `library(TMB)`
